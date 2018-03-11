@@ -1,0 +1,5 @@
+---
+# tasks file for /home/jason/ansible-test/roles/test
+- include: copy.yml
+- include: uptime.yml
+

@@ -1,0 +1,4 @@
+---
+# handlers file for /home/jason/ansible-test/roles/test
+    - name: check the date
+      shell: date >> test.txt

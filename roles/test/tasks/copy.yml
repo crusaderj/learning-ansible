@@ -1,0 +1,7 @@
+---
+- name: Check file status
+  stat: path="./test.txt"
+  register: result
+- name: copy file over
+  copy: src=files/test.txt dest=/root/test.txt
+  when: result.stat.exists != True

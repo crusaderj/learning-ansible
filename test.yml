@@ -1,0 +1,10 @@
+---
+- hosts: test
+  tasks: 
+  - name: check the uptime
+    shell: uptime
+    notify:
+    - check the date
+  handlers:
+    - name: check the date
+      shell: date

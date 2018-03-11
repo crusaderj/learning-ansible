@@ -1,0 +1,5 @@
+---
+- name: check the uptime
+  shell: uptime >> test.txt
+  notify:
+  - check the date
